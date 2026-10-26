@@ -1,4 +1,4 @@
-# Using python_chromium_driver as a base image
+# Using chromiumkit as a base image
 
 Base = Debian trixie + Chromium + chromedriver + Xvfb + x11vnc + noVNC.
 No Python/Miniforge/tini/cron/tzdata here; the app image gets those from `dockerapp_template`.
@@ -8,7 +8,7 @@ No Python/Miniforge/tini/cron/tzdata here; the app image gets those from `docker
 Take `dockerapp_template/Dockerfile` unchanged except the first lines:
 
 ```dockerfile
-FROM superkeyor/python_chromium_driver:latest
+FROM superkeyor/chromiumkit:latest
 ARG MINIFORGE_VERSION=26.9.4-0
 ```
 

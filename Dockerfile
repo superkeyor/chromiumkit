@@ -1,10 +1,10 @@
 # =============================================================================
-# Base Image: Debian trixie + Chromium/chromedriver + Xvfb + noVNC
+# Base Image: Debian + Chromium/chromedriver + Xvfb + noVNC
 # =============================================================================
 # Only the chromium/VNC pieces live here. Everything else (Miniforge, tini, tzdata,
 # cron, TZ, python envs, WORKDIR, ENTRYPOINT) comes from the app image, i.e. from
 # dockerapp_template, whose only change is:
-#   FROM superkeyor/python_chromium_driver:latest
+#   FROM superkeyor/chromiumkit:latest
 #   ARG MINIFORGE_VERSION=26.9.4-0
 # and (the one addition elsewhere) a `vnc-start` line in the app's start.sh.
 #

@@ -2,7 +2,7 @@
 csd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$csd"
 
-REPO_NAME="python_chromium_driver"
+REPO_NAME="chromiumkit"
 GITHUB_USER="superkeyor"
 DOCKERHUB_USER="superkeyor"
 REPO_VISIBILITY="--public"
@@ -109,16 +109,16 @@ echo ""
 # # Git operations
 # # git config --global --add safe.directory .
 # # git reset --hard   # discard local changes
-# # git pull git@github.com:/superkeyor/python_chromium_driver.git
+# # git pull git@github.com:/superkeyor/chromiumkit.git
 # git add -A 
 # git commit -m 'update'
-# git push git@github.com:/superkeyor/python_chromium_driver.git
+# git push git@github.com:/superkeyor/chromiumkit.git
 
 # # Docker operations
 # if [[ $(command -v docker) != "" ]]; then
-#     # sudo docker build --tag python_chromium_driver .
-#     # sudo docker image tag python_chromium_driver superkeyor/python_chromium_driver:latest  # additional tag following Docker Hub naming convention
-#     sudo docker build --tag superkeyor/python_chromium_driver:latest .
-#     sudo docker image push superkeyor/python_chromium_driver:latest
-#     # sudo docker buildx build --platform linux/amd64,linux/arm64 -t superkeyor/python_chromium_driver:latest . --push
+#     # sudo docker build --tag chromiumkit .
+#     # sudo docker image tag chromiumkit superkeyor/chromiumkit:latest  # additional tag following Docker Hub naming convention
+#     sudo docker build --tag superkeyor/chromiumkit:latest .
+#     sudo docker image push superkeyor/chromiumkit:latest
+#     # sudo docker buildx build --platform linux/amd64,linux/arm64 -t superkeyor/chromiumkit:latest . --push
 # fi
